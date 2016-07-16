@@ -6,3 +6,4 @@ def menu():
   print("5---->Promociones.")
   print("6---->Descripción de Habitaciones.")
   print("7---->Descripción de Servicios e Instalaciones.")
+
