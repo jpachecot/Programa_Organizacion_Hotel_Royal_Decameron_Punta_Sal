@@ -1,9 +1,23 @@
+import sys
+import time
+import os
+import datetime
 def menu():
-  print("1---->Inicio.")
-  print("2---->Reservaciones.")
-  print("3---->Eventos.")
-  print("4---->Tours.")
-  print("5---->Promociones.")
-  print("6---->Descripción de Habitaciones.")
-  print("7---->Descripción de Servicios e Instalaciones.")
-
+    line = "="*80
+    print(line)
+    print("\tPrograma de Organizacion de Hotel Royal Decameron Punta Sal")
+    print(line)
+    print("\t1 --> Inicio.")
+    print("\t2 --> Reservaciones.")
+    print("\t3 --> Eventos.")
+    print("\t4 --> Tours.")
+    print("\t5 --> Promociones.")
+    print("\t6 --> Descripcion de Habitaciones.")
+    print("\t7 --> Descripcion de Servicios e Instalaciones.")
+class cliente:
+    def __init__(self,nombre,apellido_paterno,apellido_materno,dni):
+        self.nombre = nombre
+        self.apellido_materno = apellido_materno
+        self.apellido_paterno = apellido_paterno
+        self.dni = dni
+menu()
