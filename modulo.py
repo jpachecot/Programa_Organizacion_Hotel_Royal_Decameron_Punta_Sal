@@ -13,7 +13,7 @@ def menu():
     print("\t4 --> Tours.")
     print("\t5 --> Promociones.")
     print("\t6 --> Descripcion de Habitaciones.")
-    print("\t7 --> Descripcion de Servicios e Instalaciones.")
+    print("\t7 --> Restaurantes.")
 class cliente:
     def __init__(self,nombre,apellido_paterno,apellido_materno,dni):
         self.nombre = nombre
