@@ -1,3 +1,5 @@
+import sys
+import moduloinicio
 def promociones():
   print("\t\t\tPromociones")
   print()
@@ -42,4 +44,4 @@ def promociones():
   print("\t\tNO COMBINABLE CON OTRAS PROMOCIONES")
   print("\t\tEn caso de grupos, favor cotizar de acuerdo a disponibilidad")
   print("\t\tOtras condiciones podrían aplicar")
-
+  moduloinicio.operacion1()

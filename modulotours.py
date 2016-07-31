@@ -1,4 +1,5 @@
-
+import sys
+import moduloinicio
 def tours():
   print("\t\t\tTours(Decameron Explore)")
   print()
@@ -55,4 +56,5 @@ def tours():
   print()
   print("-Paseo en bote")
   print("\tAdulto-->48USD Niño-->48USD")
+  moduloinicio.operacion1()
 

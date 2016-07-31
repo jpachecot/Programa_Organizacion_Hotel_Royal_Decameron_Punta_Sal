@@ -1,10 +1,14 @@
+import sys
+import moduloinicio 
 def eventos():
     print("1--->Convenciones y Eventos.")
     print("2--->Bodas.")
     print("3--->Grupos.")
+    print("4--->Regresar al Menu Principal")
+    print("5--->Salir del programa")
     print()
-    e=int(input("Ingrese la opcion que desea observar."))
-    if e==1:
+    e=input("Ingrese la opcion que desea observar.")
+    if e=="1":
         print()
         print("CONVENCIONES Y EVENTOS.")
         print()
@@ -30,7 +34,8 @@ def eventos():
         print("* Adicionalmente fiestas tema y talleres vivenciales.")
         print("Por estas y muchas más razones esperamos tener la oportunidad de demostrarle porque somos la PRIMERA Y MEJOR opción.")
         print()
-    if e==2:
+        moduloinicio.operacion3()
+    elif e=="2":
         print()
         print("BODAS")
         print()
@@ -38,13 +43,23 @@ def eventos():
         print("Nuestros planes de bendición de argollas, y diferentes ceremonias, están diseñados para que los novios vivan la importancia y la emoción del matrimonio.")
         print("Disfruta el TODO INCLUIDO de Hoteles Decameron y haz que tu matrimonio sea inolvidable para ti y tus invitados.")
         print()
-    if e==3:
+        moduloinicio.operacion3()
+    elif e=="3":
         print()
         print("GRUPOS")
         print()
         print("Hoteles Decameron tiene la mejor infraestructura para que pases unas vacaciones inolvidables, acompañado de tus amigos o familiares. Con más de 35 hoteles y según el destino que escojas, tendrás la oportunidad de disfrutar de una gran variedad de restaurantes, piscinas, bares, shows y muchas cosas más.")
         print("Además, realiza diferentes excursiones y recorridos que solo te ofrece Decameron Explorer, quien coordina todo para que no tengas que preocuparte por nada. Tenemos a tu disposición todos nuestros recursos para hacer que tu evento sea algo único e inolvidable, al mejor estilo Decameron con TODO INCLUIDO.")
         print()
+        moduloinicio.operacion3()
+    elif e=="4":
+        moduloinicio.ope()
+    elif e=="5":
+        moduloinicio.ope2()
+    else:
+        print("Ingrese un valor valido")
+        eventos()
+    
 
 
 
