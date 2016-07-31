@@ -1,5 +1,7 @@
+
 import sys
 import moduloinicio
+
 def promociones():
   print("\t\t\tPromociones")
   print()

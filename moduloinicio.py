@@ -1,9 +1,12 @@
+
 import sys
+
 from moduloeventos import *
 from modulopromociones import *
 from modulotours import *
 from modhabit import *
 from modulorestaurante import *
+
 def menuprincipal():
     print("\tPrograma de Organizacion de Hotel Royal Decameron Punta Sal")
     print("\t1 --> Inicio.")
@@ -13,7 +16,9 @@ def menuprincipal():
     print("\t5 --> Promociones.")
     print("\t6 --> Descripcion de Habitaciones.")
     print("\t7 --> Restaurantes.")
+
     t=input("Ingrese la opcion que desee: ")
+
     if t=="1":
         menuinicio()
     elif t=="3":
@@ -29,6 +34,7 @@ def menuprincipal():
     else:
         print("Ingrese un valor correcto")
         menuprincipal()
+
 def op():
     s1=input("Realmente deseas regresar al menú principal SI/NO: ")
     if s1=="Si" or s1=="SI" or s1=="si":
@@ -38,6 +44,7 @@ def op():
     else:
         print("Ingrese  SI/NO porfavor")
         op()
+
 def ope():
     se=input("Realmente deseas regresar al menú principal SI/NO: ")
     if se=="Si" or se=="SI" or se=="si":
@@ -47,6 +54,7 @@ def ope():
     else:
         print("Ingrese  SI/NO porfavor")
         ope()
+
 def ope2():
     se2=input("Realmente deseas salir SI/NO: ")
     if se2=="Si" or se2=="SI" or se2=="si":
@@ -66,6 +74,7 @@ def ope3():
     else:
         print("Ingrese  SI/NO porfavor")
         ope3()
+
 def ope4():
     ss=input("Realmente deseas salir SI/NO: ")
     if ss=="Si" or ss=="SI" or ss=="si":
@@ -94,6 +103,7 @@ def operacion1():
     else:
         print("Ingrese  SI/NO porfavor")
         operacion1()
+
 def operacion2():
     p1=input("Deseas realizar otra  consulta SI/NO: ")
     if p1=="Si" or p1=="SI" or p1=="si":
@@ -103,6 +113,7 @@ def operacion2():
     else:
         print("Ingrese  SI/NO porfavor")
         operacion2()
+
 def operacion3():
     p3=input("Deseas realizar otra  consulta SI/NO: ")
     if p3=="Si" or p3=="SI" or p3=="si":
@@ -112,6 +123,7 @@ def operacion3():
     else:
         print("Ingrese  SI/NO porfavor")
         operacion3()
+
 def operacion4():
     p4=input("Deseas realizar otra  consulta SI/NO: ")
     if p4=="Si" or p4=="SI" or p4=="si":
@@ -121,6 +133,7 @@ def operacion4():
     else:
         print("Ingrese  SI/NO porfavor")
         operacion4()
+
 def menuinicio():
     print("1--->Ubicacion.")
     print("2--->Programa Todo Incluido.")
@@ -129,12 +142,15 @@ def menuinicio():
     print("5--->Salir al menu principal")
     print("6--->Salir del programa")
     print()
+
     x=input("Ingrese la opcion que desea observar: ")
+
     if x=="1":
         print()
         print("El Hotel Royal Decameron Punta Sal está ubicado en el kilómetro 1190 de la Carretera Panamericana Norte, cerca de la frontera sur de Ecuador, distrito de Zorritos, región de Tumbes, Perú. La ciudad de Tumbes se encuentra a 1 hora 30 minutos en avión de la ciudad de Lima y el hotel a su vez está ubicado a 1 hora 15 minutos del aeropuerto de Tumbes por tierra. El Hotel Royal Decameron Punta Sal Beach Resort, Spa & Convention Center cuenta con 1 kilómetro y medio de playa. La zona goza de sol durante todo el año. Sus aguas son cálidas, sobrepasando generalmente los 20ºC. También cuenta con una gran diversidad biológica por su ubicación en esta zona al extremo norte del Perú, en donde el agua de la corriente de Humboldt por lo general no tiene influencia directa, las condiciones microclimáticas que presenta durante todas las estaciones del año, de tipo tropical, con cielo despejado, sol radiante, temperaturas cálidas del aire y del mar")
         print()
         operacion2()
+
     elif x=="2":
         print()
         print("El Hotel cuenta con todas los servicios y las instalaciones que usted necesita: ")
@@ -158,6 +174,7 @@ def menuinicio():
         print("* Topico o Enfermeria.")
         print()
         operacion2()
+
     elif x=="3":
         print()
         print("Contamos con 313 habitaciones (42 habitaciones superior twin, 12 bungalows y 259 habitaciones estándar) que cuentan con: ")
@@ -172,6 +189,7 @@ def menuinicio():
         print("* Terraza o balcon.")
         print()
         operacion2()
+
     elif x=="4":
         print()
         print("---> Nuestro Hotel cuenta con 3 Restaurantes: ")
@@ -210,10 +228,13 @@ def menuinicio():
         print("* Asistencia medica.")
         print("* Cajilla de seguridad.")
         operacion2()
+
     elif x=="5":
         ope()
+
     elif x=="6":
         ope2()
+
     else:
         print("Ingrese un valor correcto porfavor")
         menuinicio()

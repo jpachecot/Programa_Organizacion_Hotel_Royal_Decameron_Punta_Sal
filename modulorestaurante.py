@@ -1,5 +1,7 @@
+
 import sys
 import moduloinicio
+
 def operacion():
     pe=input("Deseas realizar otra  consulta SI/NO: ")
     if pe=="Si" or pe=="SI" or pe=="si":
@@ -9,6 +11,7 @@ def operacion():
     else:
         print("Ingrese  SI/NO porfavor")
         operacion()
+
 def restaurantes():
     print("\t\t RESTAURANTES.")
     print("\t1.----> Restaurante Blue Marlin.")
@@ -56,16 +59,20 @@ def restaurantes():
         print("Seco de cabrito con frejoles")
         print("Tallarines rojos con carnen/pollo")
         moduloinicio.operacion4()
+
     elif r=="3":
         print("\t Restaurante Oliva Limon.")
         print("Paella de bogavante")
         print("Tagliatelle Genovesa al pesto")
         print("Pollo en escabeche")
         moduloinicio.operacion4()
+
     elif r=="4":
         moduloinicio.ope3()
+
     elif r=="5":
         moduloinicio.ope4()
+
     else:
         print("Ingrese una opcion correcta.")
         restaurantes()

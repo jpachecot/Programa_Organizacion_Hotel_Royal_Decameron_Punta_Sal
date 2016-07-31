@@ -1,5 +1,7 @@
+
 import sys
 import moduloinicio
+
 def tours():
   print("\t\t\tTours(Decameron Explore)")
   print()

@@ -1,5 +1,6 @@
 import sys
 import moduloinicio 
+
 def eventos():
     print("1--->Convenciones y Eventos.")
     print("2--->Bodas.")
@@ -7,7 +8,9 @@ def eventos():
     print("4--->Regresar al Menu Principal")
     print("5--->Salir del programa")
     print()
+
     e=input("Ingrese la opcion que desea observar.")
+
     if e=="1":
         print()
         print("CONVENCIONES Y EVENTOS.")
@@ -35,6 +38,7 @@ def eventos():
         print("Por estas y muchas más razones esperamos tener la oportunidad de demostrarle porque somos la PRIMERA Y MEJOR opción.")
         print()
         moduloinicio.operacion3()
+
     elif e=="2":
         print()
         print("BODAS")
@@ -44,6 +48,7 @@ def eventos():
         print("Disfruta el TODO INCLUIDO de Hoteles Decameron y haz que tu matrimonio sea inolvidable para ti y tus invitados.")
         print()
         moduloinicio.operacion3()
+
     elif e=="3":
         print()
         print("GRUPOS")
@@ -52,10 +57,13 @@ def eventos():
         print("Además, realiza diferentes excursiones y recorridos que solo te ofrece Decameron Explorer, quien coordina todo para que no tengas que preocuparte por nada. Tenemos a tu disposición todos nuestros recursos para hacer que tu evento sea algo único e inolvidable, al mejor estilo Decameron con TODO INCLUIDO.")
         print()
         moduloinicio.operacion3()
+
     elif e=="4":
         moduloinicio.ope()
+
     elif e=="5":
         moduloinicio.ope2()
+
     else:
         print("Ingrese un valor valido")
         eventos()
