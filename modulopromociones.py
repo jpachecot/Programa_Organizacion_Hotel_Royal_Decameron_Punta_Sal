@@ -42,4 +42,4 @@ def promociones():
   print("\t\tNO COMBINABLE CON OTRAS PROMOCIONES")
   print("\t\tEn caso de grupos, favor cotizar de acuerdo a disponibilidad")
   print("\t\tOtras condiciones podrían aplicar")
-promociones()
+
