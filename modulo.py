@@ -2,6 +2,7 @@ import sys
 import time
 import os
 import datetime
+
 def menu():
     line = "="*80
     print(line)
@@ -14,6 +15,7 @@ def menu():
     print("\t5 --> Promociones.")
     print("\t6 --> Descripcion de Habitaciones.")
     print("\t7 --> Restaurantes.")
+    
 class cliente:
     def __init__(self,nombre,apellido_paterno,apellido_materno,dni):
         self.nombre = nombre
