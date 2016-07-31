@@ -15,6 +15,7 @@ from modulopromociones import *
 from modulotours import *
 from modhabit import *
 from modulorestaurante import *
+from modulobdreservaciones import *
 
 #FUNCIONAMIENTO DEL PROGRAMA
 

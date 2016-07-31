@@ -1,11 +1,13 @@
 
 import sys
+import os
 
 from moduloeventos import *
 from modulopromociones import *
 from modulotours import *
 from modhabit import *
 from modulorestaurante import *
+from modulobdreservaciones import *
 
 def menuprincipal():
     print("\tPrograma de Organizacion de Hotel Royal Decameron Punta Sal")
@@ -17,10 +19,12 @@ def menuprincipal():
     print("\t6 --> Descripcion de Habitaciones.")
     print("\t7 --> Restaurantes.")
 
-    t=input("Ingrese la opcion que desee: ")
+    t=input("\n\tIngrese la opcion que desee: ")
 
     if t=="1":
         menuinicio()
+    if t=="2":
+        menubdreservacion()
     elif t=="3":
         eventos()
     elif t=="4":
