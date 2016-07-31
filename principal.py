@@ -7,6 +7,7 @@ from moduloeventos import *
 from modulopromociones import *
 from modulotours import *
 from modhabit import *
+from modulorestaurante import *
 menuprincipal()
 while True:
     try:
@@ -25,3 +26,5 @@ elif t==5:
     promociones()
 elif t==6:
     tipo()
+elif t==7:
+    restaurantes()
