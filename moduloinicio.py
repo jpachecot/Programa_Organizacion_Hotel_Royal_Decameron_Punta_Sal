@@ -24,7 +24,7 @@ def menuprincipal():
     if t=="1":
         menuinicio()
     if t=="2":
-        menubdreservacion()
+        menubd()
     elif t=="3":
         eventos()
     elif t=="4":
@@ -98,6 +98,7 @@ def op1():
     else:
         print("Ingrese  SI/NO porfavor")
         op1()
+
 def operacion1():
     p=input("Deseas realizar otra  consulta SI/NO: ")
     if p=="Si" or p=="SI" or p=="si":

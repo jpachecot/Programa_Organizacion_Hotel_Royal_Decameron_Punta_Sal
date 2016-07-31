@@ -9,21 +9,21 @@ def menureservaciones():
     print("4---->Salir")
 
 def thab1():
-    print("1--->KIND A")
-    print("2--->KIND B")
-    print("3--->BUNGALOWS")
+    print("\t1--->KIND A")
+    print("\t2--->KIND B")
+    print("\t3--->BUNGALOWS")
 
 def thab211():
-    print("1--->Sencilla")
-    print("2--->Doble")
+    print("\t1--->Sencilla")
+    print("\t2--->Doble")
 
 def thab212():
-    print("1--->Sencilla")
-    print("2--->Doble")
-    print("3--->Triple")
-    print("4--->Cuadruple")
+    print("\t1--->Sencilla")
+    print("\t2--->Doble")
+    print("\t3--->Triple")
+    print("\t4--->Cuadruple")
 
 def thab213 ():
-    print("1--->KIND A")
-    print("2--->KIND B")
+    print("\t1--->KIND A")
+    print("\t2--->KIND B")
     
