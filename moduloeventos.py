@@ -65,7 +65,7 @@ def eventos():
         moduloinicio.ope2()
 
     else:
-        print("Ingrese un valor valido")
+        print("Ingrese un valor valido!")
         eventos()
     
 
