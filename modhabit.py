@@ -5,7 +5,7 @@ import moduloinicio
 import os
 
 def operac():
-    pee=input("Deseas realizar otra  consulta SI/NO: ")
+    pee=input("Deseas realizar otra consulta SI/NO: ")
     if pee=="Si" or pee=="SI" or pee=="si":
         tipo()
     elif pee=="NO" or pee=="no" or pee=="No":
