@@ -61,6 +61,8 @@ def consulta():
         input("Presione 'Enter' para volver al menu...")
     con.close()
 
+    menubd()
+
 def agregar():
     os.system("cls")
 
@@ -141,126 +143,115 @@ def agregar():
                 th1a=int(input("\tCLASE DE HABITACION: "))
                 if th1a==1:
                     th1='KIND A'
+                    print("\tSELECCIONE EL TIPO DE HABITACION")
+                    print("\t--------------------------------")
+                    moduloreservaciones.thab211()
+                    while True:
+                        try:
+                            th2a=0
+                            while (th2a!=1 and th2a!=2):
+                                th2a=int(input("\tTIPO DE HABITACION: "))
+                                if th2a==1:
+                                    th2='SENCILLA'
+                                    th3=''
+                                elif th2a==2:
+                                    th2='DOBLE'
+                                    th3=''
+                                else:
+                                    print("\tIngrese un tipo valido")
+                            break
+                        except ValueError:
+                            print("\tSolo EXISTEN LOS TIPOS 1,2. Pruebe de nuevo POR FAVOR.")
                 elif th1a==2:
                     th1='KIND B'
+                    print("\tSELECCIONE EL TIPO DE HABITACION")
+                    print("\t--------------------------------")
+                    moduloreservaciones.thab212()
+                    while True:
+                        try:
+                            th2a=0
+                            while (th2a!=1 and th2a!=2 and th2a!=3 and th2a!=4):
+                                th2a=int(input("\tTIPO DE HABITACION: "))
+                                if th2a==1:
+                                    th2='SENCILLA'
+                                    th3=''
+                                elif th2a==2:
+                                    th2='DOBLE'
+                                    th3=''
+                                elif th2a==3:
+                                    th2='TRIPLE'
+                                    th3=''
+                                elif th2a==4:
+                                    th2='CUADRUPLE'
+                                    th3=''
+                                else:
+                                    print("\tIngrese un tipo valido")
+                            break
+                        except ValueError:
+                            print("\tSolo EXISTEN LOS TIPOS 1,2,3,4. Pruebe de nuevo POR FAVOR.")
                 elif th1a==3:
                     th1='BUNGALOWS'
+                    print("\tSELECCIONE LAS CLASES DE BUNGALOWS")
+                    print("\t----------------------------------")
+                    moduloreservaciones.thab213()
+                    while True:
+                        try:
+                            th2a=0
+                            while (th2a!=1 and th2a!=2):
+                                th2a=int(input("\tCLASE DE BUNGALOWS: "))
+                                if th2a==1:
+                                    th2='KIND A'
+                                    print("\tSELECCIONE EL TIPO DE HABITACION")
+                                    print("\t--------------------------------")
+                                    moduloreservaciones.thab2131()
+                                    while True:
+                                        try:
+                                            th3a=0
+                                            while (th3a!=1 and th3a!=2):
+                                                th3a=int(input("\tTIPO DE HABITACION: "))
+                                                if th3a==1:
+                                                    th3='SENCILLA'
+                                                elif th3a==2:
+                                                    th3='DOBLE'
+                                                else:
+                                                    print("\tIngrese un tipo valido")
+                                            break
+                                        except ValueError:
+                                            print("\tSolo EXISTEN LOS TIPOS 1,2. Pruebe de nuevo POR FAVOR.")
+                                elif th2a==2:
+                                    th2='KIND B'
+                                    print("\tSELECCIONE EL TIPO DE HABITACION")
+                                    print("\t--------------------------------")
+                                    moduloreservaciones.thab2132()
+                                    while True:
+                                        try:
+                                            th3a=0
+                                            while (th3a!=1 and th3a!=2 and th3a!=3 and th3a!=4):
+                                                th3a=int(input("\tTIPO DE HABITACION: "))
+                                                if th3a==1:
+                                                    th3='SENCILLA'
+                                                elif th3a==2:
+                                                    th3='DOBLE'
+                                                elif th3a==3:
+                                                    th3='TRIPLE'
+                                                elif th3a==4:
+                                                    th3='CUADRUPLE'
+                                                else:
+                                                    print("\tIngrese un tipo valido")
+                                            break
+                                        except ValueError:
+                                            print("\tSolo EXISTEN LOS TIPOS 1,2,3,4. Pruebe de nuevo POR FAVOR.")
+                                else:
+                                    print("\tIngrese una clase valida")
+                            break
+                        except ValueError:
+                            print("\tSolo EXISTEN LAS CLASES 1,2. Pruebe de nuevo POR FAVOR.")
                 else:
                     print("\tIngrese una clase valida")
             break
         except ValueError:
             print("\tSolo EXISTEN LAS CLASES 1,2,3. Pruebe de nuevo POR FAVOR.")
 
-    if th1a==1:
-        print("\tSELECCIONE EL TIPO DE HABITACION")
-        print("\t--------------------------------")
-        moduloreservaciones.thab211()
-        while True:
-            try:
-                th2a=0
-                while (th2a!=1 and th2a!=2):
-                    th2a=int(input("\tTIPO DE HABITACION: "))
-                    if th2a==1:
-                        th2='SENCILLA'
-                        th3=''
-                    elif th2a==2:
-                        th2='DOBLE'
-                        th3=''
-                    else:
-                        print("\tIngrese un tipo valido")
-                break
-            except ValueError:
-                print("\tSolo EXISTEN LOS TIPOS 1,2. Pruebe de nuevo POR FAVOR.")
-
-    if th1a==2:
-        print("\tSELECCIONE EL TIPO DE HABITACION")
-        print("\t--------------------------------")
-        moduloreservaciones.thab212()
-        while True:
-            try:
-                th2a=0
-                while (th2a!=1 and th2a!=2 and th2a!=3 and th2a!=4):
-                    th2a=int(input("\tTIPO DE HABITACION: "))
-                    if th2a==1:
-                        th2='SENCILLA'
-                        th3=''
-                    elif th2a==2:
-                        th2='DOBLE'
-                        th3=''
-                    elif th2a==3:
-                        th2='TRIPLE'
-                        th3=''
-                    elif th2a==4:
-                        th2='CUADRUPLE'
-                        th3=''
-                    else:
-                        print("\tIngrese un tipo valido")
-                break
-            except ValueError:
-                print("\tSolo EXISTEN LOS TIPOS 1,2,3,4. Pruebe de nuevo POR FAVOR.")
-         
-    if th1a==3:
-        print("\tSELECCIONE LAS CLASES DE BUNGALOWS")
-        print("\t----------------------------------")
-        moduloreservaciones.thab213()
-        while True:
-            try:
-                th2a=0
-                while (th2a!=1 and th2a!=2):
-                    th2a=int(input("\tCLASE DE BUNGALOWS: "))
-                    if th2a==1:
-                        th2='KIND A'
-                    elif th2a==2:
-                        th2='KIND B'
-                    else:
-                        print("\tIngrese una clase valida")
-                break
-            except ValueError:
-                print("\tSolo EXISTEN LAS CLASES 1,2. Pruebe de nuevo POR FAVOR.")
-
-    if th2a==1:
-        print("\tSELECCIONE EL TIPO DE HABITACION")
-        print("\t--------------------------------")
-        moduloreservaciones.thab211()
-        while True:
-            try:
-                th3a=0
-                while (th3a!=1 and th3a!=2):
-                    th3a=int(input("\tTIPO DE HABITACION: "))
-                    if th3a==1:
-                        th3='SENCILLA'
-                    elif th3a==2:
-                        th3='DOBLE'
-                    else:
-                        print("\tIngrese un tipo valido")
-                break
-            except ValueError:
-                print("\tSolo EXISTEN LOS TIPOS 1,2. Pruebe de nuevo POR FAVOR.")
-        
-
-    if th2a==2:
-        print("\tSELECCIONE EL TIPO DE HABITACION")
-        print("\t--------------------------------")
-        moduloreservaciones.thab212()
-        while True:
-            try:
-                th3a=0
-                while (th3a!=1 and th3a!=2 and th3a!=3 and th3a!=4):
-                    th3a=int(input("\tTIPO DE HABITACION: "))
-                    if th3a==1:
-                        th3='SENCILLA'
-                    elif th3a==2:
-                        th3='DOBLE'
-                    elif th3a==3:
-                        th3='TRIPLE'
-                    elif th3a==4:
-                        th3='CUADRUPLE'
-                    else:
-                        print("\tIngrese un tipo valido")
-                break
-            except ValueError:
-                print("\tSolo EXISTEN LOS TIPOS 1,2,3,4. Pruebe de nuevo POR FAVOR.")
-        
     con = sqlite3.connect("HOTEL.s3db")
     cursor = con.cursor()
 

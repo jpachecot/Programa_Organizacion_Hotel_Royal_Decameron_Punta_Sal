@@ -27,3 +27,12 @@ def thab213 ():
     print("\t1--->KIND A")
     print("\t2--->KIND B")
     
+def thab2131():
+    print("\t1--->Sencilla")
+    print("\t2--->Doble")
+
+def thab2132():
+    print("\t1--->Sencilla")
+    print("\t2--->Doble")
+    print("\t3--->Triple")
+    print("\t4--->Cuadruple")
