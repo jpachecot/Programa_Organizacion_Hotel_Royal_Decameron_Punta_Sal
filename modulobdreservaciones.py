@@ -6,6 +6,63 @@ import sqlite3
 import moduloinicio
 import moduloreservaciones
 
+def nombre():
+    letras = [' ','A','B','C','D','E','F','G','H','I','J','K','L','M','N','Ñ','O','P','Q','R','S','T','U','V','W','X','Y','Z','a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'ñ', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+    while True:
+        x = str(input("\tNOMBRE:"))
+        verificacion = True
+        for letra in x:
+            if letra not in letras:
+                print ("\tIngresa solo letras")
+                verificación = False
+                nombre()
+                break
+        if verificacion == True:
+            return x
+
+def appaterno():
+    letras = [' ','A','B','C','D','E','F','G','H','I','J','K','L','M','N','Ñ','O','P','Q','R','S','T','U','V','W','X','Y','Z','a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'ñ', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+    while True:
+        x = str(input("\tAPELLIDO PATERNO:"))
+        verificacion = True
+        for letra in x:
+            if letra not in letras:
+                print ("\tIngresa solo letras")
+                verificación = False
+                appaterno()
+                break
+        if verificacion == True:
+            return x
+
+def apmaterno():
+    letras = [' ','A','B','C','D','E','F','G','H','I','J','K','L','M','N','Ñ','O','P','Q','R','S','T','U','V','W','X','Y','Z','a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'ñ', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+    while True:
+        x = str(input("\tAPELLIDO MATERNO:"))
+        verificacion = True
+        for letra in x:
+            if letra not in letras:
+                print ("\tIngresa solo letras")
+                verificación = False
+                apmaterno()
+                break
+        if verificacion == True:
+            return x
+
+def corigen():
+    letras = [' ','A','B','C','D','E','F','G','H','I','J','K','L','M','N','Ñ','O','P','Q','R','S','T','U','V','W','X','Y','Z','a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'ñ', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+    while True:
+        x = str(input("\tCIUDAD ORIGEN:"))
+        verificacion = True
+        for letra in x:
+            if letra not in letras:
+                print ("\tIngresa solo letras")
+                verificación = False
+                corigen()
+                break
+        if verificacion == True:
+            return x
+
+
 def vtexto(a):
     for t in a:
         if ((ord(t)<65 or ord(t)>90) and (ord(t)<97 or ord(t)>122) and ord(t)!=32):
@@ -86,24 +143,16 @@ def agregar():
     ndni=str(ndni)
 
     #INGRESO DEL NOMBRE
-    nom=input("\tNombres: ")
-    while (not vtexto(nom)):
-        nom=input("\tIngrese datos correctos, INTENTE DE NUEVO: ")
+    nom=nombre()
 
     #INGRESO DEL APELLIDO PATERNO
-    appa=input("\tApellido Paterno: ")
-    while (not vtexto(appa)):
-        appa=input("\tIngrese datos correctos, INTENTE DE NUEVO: ")
+    appa=appaterno()
 
     #INGRESO DEL APELLIDO MATERNO
-    apma=input("\tApellido Materno: ")
-    while (not vtexto(apma)):
-        apma=input("\tIngrese datos correctos, INTENTE DE NUEVO: ")
+    apma=apmaterno()
 
     #INGRESO DE CIUDAD DE ORIGEN
-    co=input("\tCiudad de Origen: ")
-    while (not vtexto(co)):
-        co=input("\tIngrese datos correctos, INTENTE DE NUEVO: ")
+    co=corigen()
 
     #INGRESO DEL TIPO DE RESERVACION
     print("\n\tTIPO DE RESERVACION")
