@@ -6,7 +6,7 @@ def eventos():
     print("2--->Bodas.")
     print("3--->Grupos.")
     print("4--->Regresar al Menu Principal")
-    print("5--->Salir del programa")
+    print("5--->Salir del Programa")
     print()
 
     e=input("Ingrese la opcion que desea observar.")
