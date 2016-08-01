@@ -176,15 +176,15 @@ def menuinicio():
 
     if x=="1":
         print()
-        print("El Hotel Royal Decameron Punta Sal está ubicado en el kilómetro 1190 de la Carretera Panamericana Norte, cerca de la frontera sur de Ecuador, distrito de Zorritos, región de Tumbes, Perú. La ciudad de Tumbes se encuentra a 1 hora 30 minutos en avión de la ciudad de Lima y el hotel a su vez está ubicado a 1 hora 15 minutos del aeropuerto de Tumbes por tierra. El Hotel Royal Decameron Punta Sal Beach Resort, Spa & Convention Center cuenta con 1 kilómetro y medio de playa. La zona goza de sol durante todo el año. Sus aguas son cálidas, sobrepasando generalmente los 20ºC. También cuenta con una gran diversidad biológica por su ubicación en esta zona al extremo norte del Perú, en donde el agua de la corriente de Humboldt por lo general no tiene influencia directa, las condiciones microclimáticas que presenta durante todas las estaciones del año, de tipo tropical, con cielo despejado, sol radiante, temperaturas cálidas del aire y del mar")
+        print("El Hotel Royal Decameron Punta Sal, está ubicado en el kilómetro 1190 de la Carretera Panamericana Norte, cerca de la frontera sur de Ecuador, distrito de Zorritos, región de Tumbes, Perú. La ciudad de Tumbes se encuentra a 1 hora 30 minutos en avión de la ciudad de Lima y el hotel a su vez está ubicado a 1 hora 15 minutos del aeropuerto de Tumbes por tierra. El Hotel Royal Decameron Punta Sal Beach Resort, Spa & Convention Center cuenta con 1 kilómetro y medio de playa. La zona goza de sol durante todo el año. Sus aguas son cálidas, sobrepasando generalmente los 20ºC. También cuenta con una gran diversidad biológica por su ubicación en esta zona al extremo norte del Perú, en donde el agua de la corriente de Humboldt por lo general no tiene influencia directa, las condiciones microclimáticas que presenta durante todas las estaciones del año, de tipo tropical, con cielo despejado, sol radiante, temperaturas cálidas del aire y del mar")
         print()
         operacion2()
 
     elif x=="2":
         print()
-        print("El Hotel cuenta con todas los servicios y las instalaciones que usted necesita: ")
+        print("El Hotel cuenta con todas los servicios y las instalaciones que usted necesita:  ")
         print()
-        print("* Desayunos, almuerzos y cenas tipo buffet.")
+        print("* Desayunos, almuerzos y cenas tipo buffett.")
         print("* Cenas a la carta.")
         print("* Snack y piqueos.")
         print("* Estacion de cevicheria durante el almuerzo.")
@@ -192,7 +192,7 @@ def menuinicio():
         print("* Refrescos ilimitados.")
         print("* Deportes nauticos no motorizados.")
         print("* Piscina para adultos.")
-        print("* Sillas y toallas para la palya y piscina.")
+        print("* Sillas y toallas para la playa y piscina.")
         print("* Gimnasio.")
         print("* Sala de Videojuegos.")
         print("* Dos canchas de tenis.")
