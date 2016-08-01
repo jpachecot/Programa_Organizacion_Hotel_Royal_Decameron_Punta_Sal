@@ -18,6 +18,7 @@ def menuprincipal():
     print("\t5 --> Promociones.")
     print("\t6 --> Descripcion de Habitaciones.")
     print("\t7 --> Restaurantes.")
+    print("\t8---> Salir del programa.")
 
     t=input("\n\tIngrese la opcion que desee: ")
 
@@ -35,9 +36,21 @@ def menuprincipal():
         tipo()
     elif t=="7":
         restaurantes()
+    elif t=="8":
+        salir()
     else:
         print("Ingrese un valor correcto")
         menuprincipal()
+
+def salir():
+    sal=input("Realmente deseas salir SI/NO: ")
+    if sal=="Si" or sal=="SI" or sal=="si":
+        sys.exit(5)
+    elif sal=="NO" or sal=="no" or sal=="No":
+        menuprincipal()
+    else:
+        print("Ingrese  SI/NO porfavor")
+        salir()
 
 def op():
     s1=input("Realmente deseas regresar al menú principal SI/NO: ")
