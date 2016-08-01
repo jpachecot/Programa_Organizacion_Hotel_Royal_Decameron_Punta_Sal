@@ -205,8 +205,10 @@ def menubd():
     opbd = input("\tDigite una opcion del menu: ")
 
     if opbd == "1":
+        os.system("clear")
         consulta()
     elif opbd == "2":
+        os.system("clear")
         agregar()
     elif opbd == "3":
         modificar()

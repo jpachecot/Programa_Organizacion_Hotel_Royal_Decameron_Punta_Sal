@@ -2,6 +2,7 @@
 
 import sys
 import moduloinicio
+import os
 
 def operac():
     pee=input("Deseas realizar otra  consulta SI/NO: ")
@@ -24,6 +25,7 @@ def tipo():
     x=input("Seleccione el tipo de habitacion: ")
 
     if x=="1":
+        os.system("clear")
         print()
         print("-Estandar Sencilla (1 persona): 1 cama tamaño king size.")
         print("-Estandar Doble (2 personas): 1 cama tamaño king size \n1 cama de una plaza.")
@@ -32,6 +34,7 @@ def tipo():
         operac()
        
     if x=="2":
+        os.system("clear")
         print()
         print("-Estandar Superior Sencilla (1 persona): 1 cama twin size.")
         print("-Estandar Superior Doble (2 personas): 2 camas twin size.")
@@ -40,6 +43,7 @@ def tipo():
         operac()
 
     if x=="3":
+        os.system("clear")
         print()
         print("-Bungalow Tipo A Sencillo (1 persona): 1 cama king size.")
         print("-Bungalow Tipo A Doble (2 personas): 1 cama king size.")
@@ -55,9 +59,11 @@ def tipo():
         operac()
 
     elif x=="4":
+        os.system("clear")
         moduloinicio.op()
 
     elif x=="5":
+        os.system("clear")
         moduloinicio.op1()
         
         

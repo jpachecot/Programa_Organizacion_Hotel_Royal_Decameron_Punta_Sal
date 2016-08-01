@@ -1,6 +1,7 @@
 
 import sys
 import os
+import time
 
 from moduloeventos import *
 from modulopromociones import *
@@ -23,23 +24,33 @@ def menuprincipal():
     t=input("\n\tIngrese la opcion que desee: ")
 
     if t=="1":
+        os.system("clear")
         menuinicio()
     if t=="2":
+        os.system("clear")
         menubd()
     elif t=="3":
+        os.system("clear")
         eventos()
     elif t=="4":
+        os.system("clear")
         tours()
     elif t=="5":
+        os.system("clear")
         promociones()
     elif t=="6":
+        os.system("clear")
         tipo()
     elif t=="7":
+        os.system("clear")
         restaurantes()
     elif t=="8":
+        os.system("clear")
         salir()
     else:
         print("Ingrese un valor correcto")
+        time.sleep(1)
+        os.system("clear")
         menuprincipal()
 
 def salir():
